@@ -178,9 +178,10 @@ HEADER STYLING
 
 .header {
 	background-color: $background-color;
-	background-image: url('../img/touring.jpg');
+	background-image: url('../img/code.jpg');
 	background-size: cover;
 	background-position: center center;
+	background-blend-mode: soft-light;
 	color: white;
 	padding: 0;
 	height: 3em;
@@ -213,7 +214,6 @@ POST STYLING
 ***************/
 
 .post {
-
 	.postTitle {
 		text-align: center;
 		margin-top: 2rem;
@@ -251,6 +251,7 @@ POST STYLING
 	}
 
 	.meta {
+		margin-bottom: 3em;
 		text-align: center;
 		color: lighten(black, 50%);
 		font-family: $sans-serif;
@@ -289,7 +290,7 @@ POST STYLING
 
 	.featuredImage {
 		position: relative;
-		margin-top: 2rem;
+		margin: 2rem 0;
 
 		img {
 			margin-bottom: 0;
@@ -458,6 +459,11 @@ POST LIST STYLING
 ***************/
 
 .posts {
+
+	.reading-time {
+		float: right;
+	}
+
 	li {
 		margin-bottom: 4rem;
 		position: relative;

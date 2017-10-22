@@ -704,9 +704,9 @@ img, video, audio, iframe, object {
 LINK STYLING
 ***************/
 a {
-  color: seagreen; }
+  color: #6c80bd; }
   a:hover {
-    color: #1b5233; }
+    color: #39497b; }
 
 /***************
 MENU STYLING
@@ -801,7 +801,7 @@ HEADER STYLING
 ***************/
 .header {
   background-color: seagreen;
-  background-image: url("../img/touring.jpg");
+  background-image: url("../img/code.jpg");
   background-size: cover;
   background-position: center center;
   color: white;
@@ -857,6 +857,7 @@ POST STYLING
     left: calc(50% - 75px); }
 
 .post .meta {
+  margin-bottom: 4em;
   text-align: center;
   color: gray;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -1052,7 +1053,7 @@ HOMEPAGE STYLING
 HEADER STYLING
 ***************/
   .header {
-    height: 15em;
+    height: 10em;
     position: relative;
     padding-bottom: 2em; }
     .header .container {
