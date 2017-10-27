@@ -281,6 +281,11 @@ POST STYLING
 	.highlight {
 		clear: both;
 		margin-bottom: 2rem;
+		width: 100vw;
+                margin-left: -50vw;
+                left: 50%;
+                padding: 0 5rem;
+                position: relative;
 	}
 
 	.dropcap {
