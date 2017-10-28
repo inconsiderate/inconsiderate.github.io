@@ -1,9 +1,13 @@
 ---
 layout: post
-title:  "Building a Web Presence - Jekyll Edition"
+title:  "Building a Web Presence with Jekyll Edition"
 date:   2017-10-19
-image: drjekyll.jpg
 ---
+
+<figure>
+	<img src="{{ '/assets/img/drjekyll.jpg' | prepend: site.baseurl }}" alt="">
+	<figcaption>Jekyll, Hyde, what's the diff?</figcaption>
+</figure>
 
 The site is now completely moved over to [Jekyll](https://jekyllrb.com/). This is my first time building a blog with jekyll, and for the most part it was surprisingly idiot-proof. Plus, not having to deal with a paid CMS is a small blessing.
 
