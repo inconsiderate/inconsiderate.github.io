@@ -2,6 +2,7 @@
 layout: post
 title:  "Adding Disqus Comments to Jekyll"
 date: 2017-10-26
+description: Straight-forward process to add Disqus comments to your Jekyll blog posts.
 ---
 
 <figure>
