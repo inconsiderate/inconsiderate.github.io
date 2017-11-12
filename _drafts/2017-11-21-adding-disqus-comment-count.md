@@ -6,6 +6,7 @@ description: I had some trouble initially setting up comment counts for Disqus. 
 image: internettroll.jpg
 imagetext: This photograph was inspired by true events.
 ---
+
 I had some trouble initially setting up comment counts for Disqus. Turns out my mistake was actually pretty small, but it screwed me up for awhile. Here's the process that worked for me.
 
 This post assumes that you already have commenting enabled for your posts. If not, you can check out my post [Adding Disqus Comments to Jekyll]({{ site.baseurl }}{% post_url 2017-10-26-adding-disqus-comments-to-jekyll %}) which covers exactly that.
