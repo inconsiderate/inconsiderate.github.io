@@ -3,12 +3,9 @@ layout: post
 title:  "Building a Web Presence (with Jekyll)!"
 date:   2017-10-19
 description: The site is now completely moved over to [Jekyll](https://jekyllrb.com/). This is my first time building a blog with jekyll, and for the most part it was surprisingly idiot-proof. Plus, not having to deal with a paid CMS is a small blessing.
+image: drjekyll.jpg
+imagetext: Jekyll, Hyde. What's the diff?
 ---
-
-<figure>
-	<img src="{{ '/assets/img/drjekyll.jpg' | prepend: site.baseurl }}" alt="">
-	<figcaption>Jekyll, Hyde, what's the diff?</figcaption>
-</figure>
 
 The site is now completely moved over to [Jekyll](https://jekyllrb.com/). This is my first time building a blog with jekyll, and for the most part it was surprisingly idiot-proof. Plus, not having to deal with a paid CMS is a small blessing.
 

@@ -3,12 +3,9 @@ layout: post
 title:  "Adding Disqus Comments to Jekyll"
 date: 2017-10-26
 description: Straight-forward process to add Disqus comments to your Jekyll blog posts.
+image: important-business.png
+imagetext: Hey, mom! Can I leave bigoted comments on this video too?!
 ---
-
-<figure>
-	<img src="{{ '/assets/img/important-business.png' | prepend: site.baseurl }}" alt="">
-	<figcaption>Hey, mom! Can I leave bigoted comments on this video too?!</figcaption>
-</figure>
 
 Adding Disqus to Jekyll is a very straight-forward process.
 
