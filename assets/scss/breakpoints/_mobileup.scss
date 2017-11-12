@@ -506,3 +506,38 @@ POST LIST STYLING
 
 
 
+.project-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	.project-item {
+		margin: 10px 20px;
+		max-width: 350px;
+		flex-wrap: wrap;
+		img {
+			float: left;
+			border: 2px solid #ddd;
+			transition: border .5s ease;
+			transition: transform .5s ease;
+			&:hover {
+				border: 2px solid #2f549e;
+				transform: scale(1.4);
+			}
+		}
+		.project-description {
+			text-align: center;
+			p {
+				font-style: 1em;
+
+			}
+		}
+	}
+}
+
+@keyframes bounce {
+	0% { transform: scale(1.4); opacity: 1 }
+	50% { transform: scale(1.2); opacity: .7; }
+	60% { transform: scale(1); opacity: 1 }
+	//80% { transform: scale(1.8) }
+	100% { transform: scale(1.65) }
+}
