@@ -13,6 +13,11 @@ $( document ).ready(function() {
       return Math.round(parseFloat(value));
     });
 
+    $(".project-item img").hover(function() {
+        $(this).siblings(".project-label").addClass('hidden');
+    }, function() {
+        $(this).siblings(".project-label").removeClass('hidden');
+    })
 });
 
 

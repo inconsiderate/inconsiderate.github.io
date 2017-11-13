@@ -510,8 +510,6 @@ POST LIST STYLING
 	}
 }
 
-
-
 .project-container {
 	display: flex;
 	flex-flow: row wrap;
@@ -527,23 +525,34 @@ POST LIST STYLING
 			transition: transform .5s ease;
 			&:hover {
 				border: 2px solid #2f549e;
-				transform: scale(1.4);
+				transform: scale(1.3);
 			}
 		}
 		.project-description {
 			text-align: center;
-			p {
-				font-style: 1em;
-
+			span.subtitle {
+				font-style: italic;
+				font-size: 0.75em;
 			}
 		}
 	}
-}
-
-@keyframes bounce {
-	0% { transform: scale(1.4); opacity: 1 }
-	50% { transform: scale(1.2); opacity: .7; }
-	60% { transform: scale(1); opacity: 1 }
-	//80% { transform: scale(1.8) }
-	100% { transform: scale(1.65) }
+	span.project-label {
+		background-color: white;
+		padding: 5px 15px;
+		border: 2px solid #00626d;
+        margin: 10px;
+		border-radius: 10px;
+		font-style: normal;
+		text-decoration: none;
+		position: absolute;
+		color: #00626d;
+		font-size: 0.6em;
+        z-index: 1000;
+        transition: opacity .5s ease, margin .5s ease;
+        opacity: 1;
+        &.hidden {
+            opacity: 0;
+            margin-top: -50px;
+        }
+	}
 }
