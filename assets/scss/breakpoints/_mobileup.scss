@@ -516,11 +516,13 @@ POST LIST STYLING
 	justify-content: center;
 	.project-item {
         h2 {
-            font-size: 1em;
             text-decoration: none;
             font-weight: inherit;
-            margin-bottom: 0;
+            line-height: 1em;
+            letter-spacing: 0.4px;
+            margin: 8px 5px;
             text-align: right;
+            font-size: 1em;
         }
 		margin: 10px 30px;
 		max-width: 350px;
@@ -534,6 +536,9 @@ POST LIST STYLING
 		}
 		.project-description {
 			text-align: center;
+            p {
+                font-size: 0.8em;
+            }
 			span.subtitle {
 				font-style: italic;
 				font-size: 0.75em;
