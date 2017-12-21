@@ -56,8 +56,8 @@ Installing vbguest additions manually fixed this for me:
 
 vagrant plugin install vagrant-vbguest
 
-But you may get problems where the version are mismatched, or it just keeps failing with one of the same messages above. A co-worker solved this by installing different versions of Virtualbox and guesteditions.
+But you may get problems where the version are mismatched, or it just keeps failing with one of the same messages above. Mine worked right away, but a co-worker solved this by installing different versions of Virtualbox and guest-editions.
 
-Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-Marvell AVASTAR Wireless-AC Network Controller' (VERR_INTNET_FLT_IF_NOT_FOUND).
+* Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-Marvell AVASTAR Wireless-AC Network Controller' (VERR_INTNET_FLT_IF_NOT_FOUND).
 
-You may be selecting the wrong network interface. I was trying to use my regular network controller, changing to the Hyper-V Adapter got things working again.
+You may be selecting the wrong network interface. I was trying to use my standard network controller at first, but switching to the Hyper-V Adapter got things working again.
