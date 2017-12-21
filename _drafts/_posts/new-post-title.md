@@ -43,9 +43,11 @@ P.S. I don't miss Sketch at all. Really. I'm not in denial. :/
       {% highlight bash %}export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"{% endhighlight %}
    2. vagrant up yay!
 9. Mounting Directories
-   {% highlight bash %}mounting failed with the error: Protocol error{% endhighlight %}
+   
 
-{% highlight bash %}/sbin/mount.vboxsf: mounting failed with the error: Protocol error{% endhighlight %}
+   `mounting failed with the error: Protocol error`
+
+   `/sbin/mount.vboxsf: mounting failed with the error: Protocol error`
 
 Microsoft has changed the location of the old lxss directory which stores everything related to WSL. To fix this, you can create a symlink (within a Windows Terminal) to where VirtualBox is expecting these files to be.
 
