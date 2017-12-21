@@ -18,7 +18,7 @@ imagetext: Why isn't this working? ...SUDO ALL THE THINGS!
    1. Download the 64-bit Debian package of Vagrant and run it inside Bash.
 
       [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html "https://www.vagrantup.com/downloads.html")
-   2. Install it! 
+   2. Install it!
 
       sudo dpkg -i vagrant_1.9.7_x86_64.deb
 3. Download the Windows package and install that as well.
@@ -35,29 +35,28 @@ imagetext: Why isn't this working? ...SUDO ALL THE THINGS!
 8. Get Vagrant & Virtualbox to Play Nicely Together
    1. Inside Bash, run the following to allow Vagrant access to Windows filesystem.
 
-      export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+      {% highlight bash %}export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"{% endhighlight %}
    2. vagrant up yay!
-9. Bonus Problems
+9. Mounting Directories
+{% highlight bash %}mounting failed with the error: Protocol error{% endhighlight %}
 
-* mounting failed with the error: Protocol error
-
-`/sbin/mount.vboxsf: mounting failed with the error: Protocol error`
+{% highlight bash %}/sbin/mount.vboxsf: mounting failed with the error: Protocol error{% endhighlight %}
 
 Microsoft has changed the location of the old lxss directory which stores everything related to WSL. To fix this, you can create a symlink (within a Windows Terminal) to where VirtualBox is expecting these files to be.
 
-`mklink /J C:\\\\Users\\\\%username%\\\\AppData\\\\Local\\\\lxss C:\\\\Users\\\\%username%\\\\AppData\\\\Local\\\\Packages\\\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\\\LocalState\\\\rootfs`
+`mklink /J C:\\\\\\\\Users\\\\\\\\%username%\\\\\\\\AppData\\\\\\\\Local\\\\\\\\lxss C:\\\\\\\\Users\\\\\\\\%username%\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Packages\\\\\\\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\\\\\\\LocalState\\\\\\\\rootfs`
 
-* Vagrant was unable to mount VirtualBox shared folders, because vb guest addition versions do not match.
-* Failed to mount folders in Linux guest. This is usually because the "vboxsf" file system is not available. Please verify that the guest additions are properly installed in the guest and can work properly.
+{% highlight bash %}Vagrant was unable to mount VirtualBox shared folders, because vb guest addition versions do not match.{% endhighlight %}
+{% highlight bash %}Failed to mount folders in Linux guest. This is usually because the "vboxsf" file system is not available. Please verify that the guest additions are properly installed in the guest and can work properly.{% endhighlight %}
 
 At this point I was able to get the box to initialize, which is something (yay), but it would fail immediately after booting. Any of the above errors are all caused by problems with Virtualbox. Vagrant has support for WSL, but as of writing Virtualbox does not.
 
 Installing vbguest additions manually fixed this for me:
 
-vagrant plugin install vagrant-vbguest
+`vagrant plugin install vagrant-vbguest`
 
 But you may get problems where the version are mismatched, or it just keeps failing with one of the same messages above. Mine worked right away, but a co-worker solved this by installing different versions of Virtualbox and guest-editions.
 
-* Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-Marvell AVASTAR Wireless-AC Network Controller' (VERR_INTNET_FLT_IF_NOT_FOUND).
+{% highlight bash %}Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-Marvell AVASTAR Wireless-AC Network Controller' (VERR_INTNET_FLT_IF_NOT_FOUND).{% endhighlight %}
 
 You may be selecting the wrong network interface. I was trying to use my standard network controller at first, but switching to the Hyper-V Adapter got things working again.
