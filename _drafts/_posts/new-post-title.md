@@ -43,7 +43,7 @@ imagetext: Why isn't this working? ...SUDO ALL THE THINGS!
 
 `/sbin/mount.vboxsf: mounting failed with the error: Protocol error`
 
-Microsoft has changed the location of the old lxss directory which stores everything WSL. To fix this, you can create a symlink (within a Windows Terminal) to where VirtualBox is expecting these files to be.
+Microsoft has changed the location of the old lxss directory which stores everything related to WSL. To fix this, you can create a symlink (within a Windows Terminal) to where VirtualBox is expecting these files to be.
 
 `mklink /J C:\\\\Users\\\\%username%\\\\AppData\\\\Local\\\\lxss C:\\\\Users\\\\%username%\\\\AppData\\\\Local\\\\Packages\\\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\\\LocalState\\\\rootfs`
 
