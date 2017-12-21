@@ -8,6 +8,11 @@ description: Windows Subsystem for Linux is awesome. Introduced with Windows 10,
 image: "/uploads/2017/12/21/runrunrun.jpg"
 imagetext: Why isn't this working? ...SUDO ALL THE THINGS!
 ---
+I recently got a SurfaceBook 2 laptop to replace my aging Macbook Air. It's really not much of a stretch since I use Windows at the office, but I've always worked within Cygwin. I've read a bit about this newfangled WSL thing that Microsoft is promoting, and figured I may as well give that a try before resigning myself to more Cygwin on my personal machine. 
+
+So. Here we go.
+P.S. I don't miss Sketch at all. Really. I'm not in denial. :/
+
 1. Install Bash for Ubuntu for Windows
    1. "Turn Windows Features On and Off"
    2. Check Windows SubSystem For Linux
