@@ -54,7 +54,9 @@ Microsoft has changed the location of the old lxss directory which stores everyt
 `mklink /J C:\\Users\\%username%\\AppData\\Local\\lxss C:\\Users\\%username%\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs`
 
 {% highlight bash %}Vagrant was unable to mount VirtualBox shared folders, because vb guest addition versions do not match.{% endhighlight %}
-{% highlight bash %}Failed to mount folders in Linux guest. This is usually because the "vboxsf" file system is not available. Please verify that the guest additions are properly installed in the guest and can work properly.{% endhighlight %}
+{% highlight bash %}Failed to mount folders in Linux guest. This is usually because the "vboxsf" file system is not available. 
+
+Please verify that the guest additions are properly installed in the guest and can work properly.{% endhighlight %}
 
 At this point I was able to get the box to initialize, which is something (yay), but it would fail immediately after booting. Any of the above errors are all caused by problems with Virtualbox. Vagrant has support for WSL, but as of writing Virtualbox does not.
 
