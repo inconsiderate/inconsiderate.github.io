@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/new-post-title.md
 hide_body: false
 fields:
 - name: layout
