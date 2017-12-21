@@ -8,7 +8,7 @@ description: Windows Subsystem for Linux is awesome. Introduced with Windows 10,
 image: "/assets/img/runrunrun.jpg"
 imagetext: Why isn't this working? ...SUDO ALL THE THINGS!
 ---
-I recently got a SurfaceBook 2 laptop to replace my aging Macbook Air. It's really not much of a stretch since I use Windows at the office, but I've always worked within Cygwin. I've read a bit about this newfangled WSL thing that Microsoft is promoting, and figured I may as well give that a try before resigning myself to more Cygwin on my personal machine. 
+I recently got a SurfaceBook 2 laptop to replace my aging Macbook Air. It's really not much of a stretch since I use Windows at the office, but I've always worked within Cygwin. I've read a bit about this newfangled WSL thing that Microsoft is promoting, and figured I may as well give that a try before resigning myself to more Cygwin on my personal machine.
 
 So. Here we go.
 P.S. I don't miss Sketch at all. Really. I'm not in denial. :/
@@ -43,13 +43,13 @@ P.S. I don't miss Sketch at all. Really. I'm not in denial. :/
       {% highlight bash %}export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"{% endhighlight %}
    2. vagrant up yay!
 9. Mounting Directories
-{% highlight bash %}mounting failed with the error: Protocol error{% endhighlight %}
+   {% highlight bash %}mounting failed with the error: Protocol error{% endhighlight %}
 
 {% highlight bash %}/sbin/mount.vboxsf: mounting failed with the error: Protocol error{% endhighlight %}
 
 Microsoft has changed the location of the old lxss directory which stores everything related to WSL. To fix this, you can create a symlink (within a Windows Terminal) to where VirtualBox is expecting these files to be.
 
-`mklink /J C:\\\\\\\\Users\\\\\\\\%username%\\\\\\\\AppData\\\\\\\\Local\\\\\\\\lxss C:\\\\\\\\Users\\\\\\\\%username%\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Packages\\\\\\\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\\\\\\\LocalState\\\\\\\\rootfs`
+`mklink /J C:\\Users\\%username%\\AppData\\Local\\lxss C:\\Users\\%username%\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs`
 
 {% highlight bash %}Vagrant was unable to mount VirtualBox shared folders, because vb guest addition versions do not match.{% endhighlight %}
 {% highlight bash %}Failed to mount folders in Linux guest. This is usually because the "vboxsf" file system is not available. Please verify that the guest additions are properly installed in the guest and can work properly.{% endhighlight %}
