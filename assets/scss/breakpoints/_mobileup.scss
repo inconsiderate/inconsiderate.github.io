@@ -227,6 +227,9 @@ POST STYLING
 ***************/
 
 .post {
+	.code {
+		word-wrap: break-word;
+	}
 	.postTitle {
 		text-align: center;
 		margin-top: 2rem;
