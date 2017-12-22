@@ -5,7 +5,7 @@ date: 2017-12-21 23:24:40 -1100
 description: Windows Subsystem for Linux is awesome. Introduced with Windows 10, it
   lets you (sort of) natively run Ubuntu inside of Windows without a VM. It's great,
   but there there are still some major pains in getting a dev environment working.
-image: "/assets/img/runrunrun.jpg"
+image: runrunrun.jpg
 imagetext: Why isn't this working? ...SUDO ALL THE THINGS!
 ---
 I recently got a SurfaceBook 2 laptop to replace my aging Macbook Air. It's really not much of a "new thing" to me since I use Windows at the office, but there I work within Cygwin. I've read a bit about this newfangled WSL thing that Microsoft is promoting, and figured I may as well give that a try on my personal machine.
