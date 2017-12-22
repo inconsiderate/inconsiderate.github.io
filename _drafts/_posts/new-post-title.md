@@ -68,17 +68,17 @@ You're probably going to see one of these errors when you first try to bring up 
 
 Please verify that the guest additions are properly installed in the guest and can work properly.{% endhighlight %}
 
-At this point I was able to get the box to initialize, which is something (yay), but it would fail immediately after booting. Any of the above errors are all caused by problems with Virtualbox. Vagrant has support for WSL, but as of writing Virtualbox does not.
+At this point I was able to get the box to initialize, which is something (yay), but it would fail immediately after booting. Any of the above errors are likely caused by problems with Virtualbox. Vagrant has support for WSL, but as of writing Virtualbox does not.
 
 Installing vbguest additions manually fixed this for me:
 
 `vagrant plugin install vagrant-vbguest`
 
-But you may get problems where the version are mismatched, or it just keeps failing with one of the same messages above. Mine worked right away, but a co-worker solved this by installing different versions of Virtualbox and guest-editions.
+But you may get problems where the version are mismatched, or it just keeps failing with one of the same messages above. Mine worked right away, but a co-worker solved this by installing a different version of Virtualbox and guest-editions.
 
 {% highlight bash %}Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-Marvell AVASTAR Wireless-AC Network Controller' (VERR_INTNET_FLT_IF_NOT_FOUND).{% endhighlight %}
 
-You may be selecting the wrong network interface. I was trying to use my standard network controller at first, but switching to the Hyper-V Adapter got things working again.
+And finally, the last problem (that I encountered, at least). You may be selecting the wrong network interface. This was just me being stupid, but I was trying to use my standard network controller at first; switching to the Hyper-V Adapter got things working again.
 
 ### 9. Done?
 
