@@ -1,6 +1,6 @@
 ---
 pages:
-- _posts/new-post-title.md
+- _posts/2017-12-22-new-post-title.md
 hide_body: false
 fields:
 - name: layout
