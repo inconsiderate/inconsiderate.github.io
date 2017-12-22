@@ -5,56 +5,66 @@ date: 2017-12-21 02:24:40 -0800
 description: Windows Subsystem for Linux is awesome. Introduced with Windows 10, it
   lets you (sort of) natively run Ubuntu inside of Windows without a VM. It's great,
   but there there are still some major pains in getting a dev environment working.
-image: "runrunrun.jpg"
+image: "/assets/img/runrunrun.jpg"
 imagetext: Why isn't this working? ...SUDO ALL THE THINGS!
 ---
-I recently got a SurfaceBook 2 laptop to replace my aging Macbook Air. It's really not much of a stretch since I use Windows at the office, but I've always worked within Cygwin. I've read a bit about this newfangled WSL thing that Microsoft is promoting, and figured I may as well give that a try before resigning myself to more Cygwin on my personal machine.
+I recently got a SurfaceBook 2 laptop to replace my aging Macbook Air. It's really not much of a "new thing" to me since I use Windows at the office, but there I work within Cygwin. I've read a bit about this newfangled WSL thing that Microsoft is promoting, and figured I may as well give that a try on my personal machine.
 
 So. Here we go.
-P.S. I don't miss Sketch at all. Really. I'm not in denial. :/
 
-1. Install Bash for Ubuntu for Windows
-   1. "Turn Windows Features On and Off"
-   2. Check Windows SubSystem For Linux
-   3. Install Ubuntu from Windows store
-   4. Reboot
-   5. Open Ubuntu/Bash and open Notepad.exe to test Windows executables in bash
-2. Install Vagrant - I'm using version 1.9.7
-   1. Download the 64-bit Debian package of Vagrant and run it inside Bash.
+P.S. I don't miss [Sketch ](https://www.sketchapp.com/) at all. Really. I'm not in denial. :/
 
-      [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html "https://www.vagrantup.com/downloads.html")
-   2. Install it!
+### 1. Install Bash for Ubuntu for Windows (for awesome people)
 
-      sudo dpkg -i vagrant_1.9.7_x86_64.deb
-3. Download the Windows package and install that as well.
-4. Install Virtualbox - I'm using version 5.1.24
-5. Download the Windows 10 install package for Virtualbox and run it in Windows.
+* In control panel, navigate over to "Turn Windows Features On and Off." In the list, find and check the "Windows SubSystem for Linux" box.
+* In the Microsoft Store, find and install the Ubuntu app. Other places may tell you install from a terminal window, but the most up to date version is found on the app store.
+* Reboot
+* Open Ubuntu by clicking on the fancy new Ubuntu icon you just installed, and follow the prompts to choose a password and finish setting up.
+* Inside Ubuntu, type `notepad.exe` to ensure you can execute Windows executables from within the WSL. If you can't, you're running an earlier version of the WSL and probably didn't install from the Microsoft Store.
 
-   [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads "https://www.virtualbox.org/wiki/Downloads")
-6. Add Virtualbox to your windows environment variables.
+### 2. Install Vagrant (I'm using version 1.9.7)
 
-   For me this was C:\\Program Files\\Oracle\\VirtualBox
+* Download the 64-bit Debian package of Vagrant that suits your needs. I'm using version 1.9.7 for compatibility reasons, and because this is the version I use in the office.
 
-   Pro-tip: Just type "environment variables" into the Windows Searchbar, and it'll go right to it.
-7. Reboot.
-8. Get Vagrant & Virtualbox to Play Nicely Together
-   1. Inside Bash, run the following to allow Vagrant access to Windows filesystem.
+  [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html "https://www.vagrantup.com/downloads.html")
+* Open up Ubuntu, locate the file you just downloaded, and install it!
 
-      {% highlight bash %}export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"{% endhighlight %}
-   2. vagrant up yay!
-9. Mounting Directories
-   
+  `sudo dpkg -i vagran_t1.9.7_x86_64.deb`
+* Download the Vagrant Windows package and install that as well. **Make sure it's the same version!**
 
-   `mounting failed with the error: Protocol error`
+### 4. Install Virtualbox - I'm using version 5.1.24
 
-   `/sbin/mount.vboxsf: mounting failed with the error: Protocol error`
+* Download the Windows 10 install package for Virtualbox and run it in Windows.
 
-Microsoft has changed the location of the old lxss directory which stores everything related to WSL. To fix this, you can create a symlink (within a Windows Terminal) to where VirtualBox is expecting these files to be.
+[https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads "https://www.virtualbox.org/wiki/Downloads")
 
-`mklink /J C:\\Users\\%username%\\AppData\\Local\\lxss C:\\Users\\%username%\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs`
+### 5. Add Virtualbox to your Windows environment variables.
+
+For me this was C:\\Program Files\\Oracle\\VirtualBox
+
+Pro-tip: Just type "environment variables" into the Windows Searchbar, and it'll take you right to it.
+
+### 6. Reboot.
+
+### 7. Get Vagrant & Virtualbox to Play Nicely Together
+
+* Inside Bash, you'll need to set an environment variable to give Vagrant access to the Windows filesystem.
+
+   {% highlight bash %}export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"{% endhighlight %}
+* `vagrant up` yay!
+
+### 8. Mounting Directories
+
+`mounting failed with the error: Protocol error`
+
+`/sbin/mount.vboxsf: mounting failed with the error: Protocol error`
+
+You're probably going to see one of these errors when you first try to bring up a fresh VM. Microsoft has changed the location of the old lxss directory which stores everything related to WSL. To fix this, you can create a symlink (within a Windows Terminal) to where VirtualBox is expecting these files to be.
+
+`mklink /J C:\%username%\AppData\Local\lxss C:\Users\%username%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs`
 
 {% highlight bash %}Vagrant was unable to mount VirtualBox shared folders, because vb guest addition versions do not match.{% endhighlight %}
-{% highlight bash %}Failed to mount folders in Linux guest. This is usually because the "vboxsf" file system is not available. 
+{% highlight bash %}Failed to mount folders in Linux guest. This is usually because the "vboxsf" file system is not available.
 
 Please verify that the guest additions are properly installed in the guest and can work properly.{% endhighlight %}
 
@@ -69,3 +79,7 @@ But you may get problems where the version are mismatched, or it just keeps fail
 {% highlight bash %}Stderr: VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-Marvell AVASTAR Wireless-AC Network Controller' (VERR_INTNET_FLT_IF_NOT_FOUND).{% endhighlight %}
 
 You may be selecting the wrong network interface. I was trying to use my standard network controller at first, but switching to the Hyper-V Adapter got things working again.
+
+### 9. Done?
+
+Hopefully everything worked out, and you're now smooth sailing and able to fire up your own virtual machines. If not, please let me know what worked for you (and what didn't)!
