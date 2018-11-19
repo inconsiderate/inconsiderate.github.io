@@ -1,7 +1,6 @@
 ---
 title: Building a Media Center For Your Mom Part 2 - Hardware and Accounting
 layout: post
-date: 2018-11-18
 description: Before we start building anything, we're gonna need hardware. Specifically, we need a NAS to serve files, hard drives to put in the NAS, and a tv-attached playback device. We'll also need to set up the external accounts that will link everything together.
 image: hardware.jpg
 imagetext: Hey Mom! I'm building a COMPUTER!
@@ -74,4 +73,4 @@ It can also be worth your while to sign up for both services (or even more if yo
 
 Once you've signed up, you'll need to check in the settings for your account and find the API key. Save this, as we'll need it later.
 
-#### Next in Series - Configure your NAS and set up Docker - Coming Soon
+#### Next in Series - [Configure your NAS and set up Docker]({/blog/2018-11-20-complete-media-solution-part-3})

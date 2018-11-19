@@ -7,4 +7,15 @@ image: hardware.jpg
 imagetext: Hey Mom! I'm building a COMPUTER!
 ---
 
-Placeholder.
+# Networks and Remote Access
+This is where we do all of the port forwarding on your router, and set up nzb360 and emby/plex on your phone.
+
+# Clean Up & Admin
+
+Synology daily reboot task
+/sbin/shutdown -r now
+
+Recycle bin emptier schedule
+
+
+![Synology daily reboot example](/assets/img/media_post/cleanup1.PNG)
