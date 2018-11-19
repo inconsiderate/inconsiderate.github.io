@@ -9,7 +9,6 @@ permalink: /blog/
     <ul class="posts noList">
         {% for post in site.posts %}
         <li>
-            <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
             <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
             <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.id}}">0 comments</a>
             <span class="reading-time"><span class="time">{{ post.content | number_of_words | divided_by:180 }}</span> Min Read</span>

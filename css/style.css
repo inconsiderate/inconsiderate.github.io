@@ -125,6 +125,7 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
+  white-space: normal;
   /* 2 */ }
 
 /**
