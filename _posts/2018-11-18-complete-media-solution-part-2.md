@@ -2,7 +2,7 @@
 title: Building a Media Center For Your Mom Part 2 - Hardware and Accounting
 layout: post
 date: 2018-11-18
-description: Step-by-step instructions for building a reliable and scalable local media center that will scale as large as your house will allow (and beyond).
+description: Before we start building anything, we're gonna need hardware. Specifically, we need a NAS to serve files, hard drives to put in the NAS, and a tv-attached playback device. We'll also need to set up the external accounts that will link everything together.
 image: hardware.jpg
 imagetext: Hey Mom! I'm building a COMPUTER!
 ---
@@ -13,7 +13,7 @@ imagetext: Hey Mom! I'm building a COMPUTER!
 
 ## Hardware
 
-Before we start building anything, we're going to need hardware. Specifically, we need a NAS to serve files, hard drives to put in the NAS, and a tv-attached playback device. For this project, our hardware priorities are:
+Before we start building anything, we're gonna need hardware. Specifically, we need a NAS to serve files, hard drives to put in the NAS, and a tv-attached playback device. For this project, our hardware priorities are:
 
 1. Expandable storage
 2. Easy to manage
