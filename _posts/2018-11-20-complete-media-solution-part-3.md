@@ -2,8 +2,8 @@
 title: Building a Media Center For Your Mom Part 3 - Synology & Docker
 layout: post
 description: It's time to get that Synology NAS set up, and do a little exploring with Docker.
-image: hardware.jpg
-imagetext: Hey Mom! I'm building a COMPUTER!
+image: dockerwhale.jpg
+imagetext: No, not that kind of whale...
 ---
 
 #### Previous in Series - [Part 2 - Hardware and Accounting]({% post_url 2018-11-18-complete-media-solution-part-2 %})
