@@ -32,12 +32,12 @@ Here's a rundown of what we'll be doing over the next steps:
     - Get access to Usenet
     - Get access to an indexer
 
-2. [Configure your NAS and set up Docker]({% post_url 2018-11-21-complete-media-solution-part-3})
+2. [Configure your NAS and set up Docker]({% post_url 2018-11-21-complete-media-solution-part-3 %})
     - Set up your NAS
     - Install and configure Docker
     - Prepare Docker containers
 
-3. [Install the server software - NzbGet]({% post_url 2018-12-22-complete-media-solution-part-4})
+3. [Install the server software - NzbGet]({% post_url 2018-12-22-complete-media-solution-part-4 %})
     - Configure the NzbGet Docker container
     - Configure NzbGet
 

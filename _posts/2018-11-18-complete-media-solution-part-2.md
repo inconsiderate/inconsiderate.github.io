@@ -73,4 +73,4 @@ It can also be worth your while to sign up for both services (or even more if yo
 
 Once you've signed up, you'll need to check in the settings for your account and find the API key. Save this, as we'll need it later.
 
-#### Next in Series - [Configure your NAS and set up Docker]({% post_url 2018-11-21-complete-media-solution-part-3})
+#### Next in Series - [Configure your NAS and set up Docker]({% post_url 2018-11-21-complete-media-solution-part-3 %})
