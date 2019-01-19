@@ -1,7 +1,6 @@
 ---
 title: WSL and Vagrant and Virtualbox and YOU!
 layout: post
-date: 2017-12-21 23:24:40 -1100
 description: Windows Subsystem for Linux is awesome. Introduced with Windows 10, it
   lets you (sort of) natively run Ubuntu inside of Windows without a VM. It's great,
   but there there are still some major pains in getting a dev environment working.

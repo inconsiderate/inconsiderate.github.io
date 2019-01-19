@@ -25,35 +25,35 @@ This involves multiple pieces of hardware and steps, but by the end of this tuto
 
 Here's a rundown of what we'll be doing over the next steps:
 
-1. [Set up hardware and third-party services]({% post_url 2018-11-18-complete-media-solution-part-2 %})
+* [Set up hardware and third-party services]({% post_url 2018-11-18-complete-media-solution-part-2 %})
     - 2-4 bay Synology NAS
     - 2-4 (designed-for-NAS) hard drives
     - A TV-connected device for playback
     - Get access to Usenet
     - Get access to an indexer
 
-2. [Configure your NAS and set up Docker]({% post_url 2018-11-21-complete-media-solution-part-3 %})
+* [Configure your NAS and set up Docker]({% post_url 2018-11-21-complete-media-solution-part-3 %})
     - Set up your NAS
     - Install and configure Docker
     - Prepare Docker containers
 
-3. [Install the server software - NzbGet]({% post_url 2018-12-22-complete-media-solution-part-4 %})
+* [Install the server software - NzbGet]({% post_url 2018-12-22-complete-media-solution-part-4 %})
     - Configure the NzbGet Docker container
     - Configure NzbGet
 
-4. Install the server software - Sonarr - Coming Soon
+* Install the server software - Sonarr - Coming Soon
     - Configure the Sonarr Docker container
     - Configure Sonarr
 
-5. Install the server software - Radarr - Coming Soon
+* Install the server software - Radarr - Coming Soon
     - Configure the Radarr Docker container
     - Configure Radarr
 
-6. Install the client software - Coming Soon
+* Install the client software - Coming Soon
     - Set up Roku/AndroidTV
     - Emby for playback on your TV
 
-7. Networks and Mobile Access - Coming Soon
+* Networks and Mobile Access - Coming Soon
     - Configure your router for remote access
     - nzb360 for remote management
     - Emby on your phone for remote playback (optional)

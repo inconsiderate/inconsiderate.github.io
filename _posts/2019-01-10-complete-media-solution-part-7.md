@@ -1,11 +1,12 @@
 ---
 title: Building a Media Center For Your Mom Part 7 - Emby/Plex Setup
 layout: post
-date: 2018-09-28
 description: Step-by-step instructions for building a reliable and scalable local media center that will scale as large as your house will allow (and beyond).
-image: hardware.jpg
-imagetext: Hey Dad! I'm building a COMPUTER!
+image: media_post/easycutting.jpg
+imagetext: Am I installing this the right way?!!?
 ---
+
+#### Previous in Series - [Part 6 - Radarr Setup and Config]({% post_url 2019-01-05-complete-media-solution-part-6 %})
 
 `Note: This post is strictly and entirely an educational experiment and I am in no way condoning the use, nor advocacy, of software to acquire copyrighted media content. If you use this information for such a purpose, you have been warned.`
 
@@ -91,18 +92,4 @@ Accept the TOS, and click `Finish`
 
 ## Plex Server
 
-Plex and Emby have a fairly similar set up process.
-
-# Client Software
-
-## AndroidTV
-
-## Roku
-
-## Kodi install and config
-
-## Emby install and config
-
-## Plex install and config
-This is the thing.
-
+Plex and Emby have a fairly similar set up process. More info forthcoming!
