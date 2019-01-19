@@ -1,8 +1,7 @@
 ---
 title: Building a Media Center For Your Mom Part 4 - NZBGet Setup
 layout: post
-date: 2018-09-22
-description: Step-by-step instructions for building a reliable and scalable local media center that will scale as large as your house will allow (and beyond).
+description: NZBGet, the heart of the operation. Let's get it setup and running.
 image: hardware.jpg
 imagetext: Hey Dad! I'm building a COMPUTER!
 ---
@@ -104,3 +103,5 @@ Default here is no. I like to set this to Yes because, like the above, repair is
 ### Finally
 1. Click Save at the bottom of the page.
 2. Click Reload NZBGet, and wait for the page to reload.
+
+#### Next in Series - Configure and Setup Sonarr - Coming Soon

@@ -77,4 +77,4 @@ Click on the Image tab in the left menu. It may take a couple minutes to downloa
 
 You can see in this screenshot that I've also installed Ubooquity. This is an application that functions a lot like Sonarr/Radarr, but for books and comics. It's a bit more complicated to setup, and also prone to problems and misconfiguration. Because of that, it's beyond the scope of this post, but maybe that's a post for another day.
 
-#### Next in Series - Configure and Setup NZBGet - Coming Soon
+#### Next in Series - [Configure and Setup NZBGet]({% post_url 2018-12-22-complete-media-solution-part-4})

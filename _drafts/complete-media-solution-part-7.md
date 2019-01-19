@@ -106,12 +106,3 @@ Plex and Emby have a fairly similar set up process.
 ## Plex install and config
 This is the thing.
 
-# Networks and Remote Access
-This is where we do all of the port forwarding on your router, and set up nzb360 and emby/plex on your phone.
-
-# Clean Up & Admin
-
-Synology daily reboot task
-/sbin/shutdown -r now
-
-Recycle bin emptier schedule
