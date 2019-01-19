@@ -41,19 +41,19 @@ Here's a rundown of what we'll be doing over the next steps:
     - Configure the NzbGet Docker container
     - Configure NzbGet
 
-* Install the server software - Sonarr - Coming Soon
+* [Install the server software - Sonarr]({% post_url 2019-01-02-complete-media-solution-part-5 %})
     - Configure the Sonarr Docker container
     - Configure Sonarr
 
-* Install the server software - Radarr - Coming Soon
+* [Install the server software - Radarr]({% post_url 2019-01-05-complete-media-solution-part-6 %})
     - Configure the Radarr Docker container
     - Configure Radarr
 
-* Install the client software - Coming Soon
+* [Install the client software]({% post_url 2019-01-10-complete-media-solution-part-7 %})
     - Set up Roku/AndroidTV
     - Emby for playback on your TV
 
-* Networks and Mobile Access - Coming Soon
+* [Networks and Mobile Access]({% post_url 2019-01-15-complete-media-solution-part-8 %})
     - Configure your router for remote access
     - nzb360 for remote management
     - Emby on your phone for remote playback (optional)
