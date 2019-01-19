@@ -6,6 +6,8 @@ image: hardware.jpg
 imagetext: Hey Dad! I'm building a COMPUTER!
 ---
 
+#### Previous in Series - [Part 3 - Synology & Docker]({% post_url 2018-11-21-complete-media-solution-part-3 %})
+
 `Note: This post is strictly and entirely an educational experiment and I am in no way condoning the use, nor advocacy, of software to acquire copyrighted media content. If you use this information for such a purpose, you have been warned.`
 
 ## NZBGet
